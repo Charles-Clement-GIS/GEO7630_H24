@@ -23,11 +23,11 @@ function togglePoints2020() {
                     "property": "score",
                     "type": "interval",
                     "stops": [
-                        [{"value": 41284, "zoom": 10}, "rgba(242, 233, 1, 1)"],
-                        [{"value": 159435, "zoom": 10}, "rgba(245, 190, 17, 1)"],
-                        [{"value": 470764, "zoom": 10}, "rgba(249, 147, 33, 1)"],
-                        [{"value": 879637, "zoom": 10}, "rgba(252, 104, 48, 1)"],
-                        [{"value": 2422146, "zoom": 10}, "rgba(255, 61, 64, 1)"]
+                        [{"value": 4942, "zoom": 10}, "rgba(242, 233, 1, 1)"],
+                        [{"value": 14329, "zoom": 10}, "rgba(245, 190, 17, 1)"],
+                        [{"value": 25664, "zoom": 10}, "rgba(249, 147, 33, 1)"],
+                        [{"value": 45003, "zoom": 10}, "rgba(252, 104, 48, 1)"],
+                        [{"value": 1422146, "zoom": 10}, "rgba(255, 61, 64, 1)"]
                     ],
                     "default": "#F2e901"
                 },
