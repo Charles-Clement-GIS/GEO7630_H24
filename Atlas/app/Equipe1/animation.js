@@ -1,4 +1,4 @@
-var rangeSlider = document.getElementById("customRange2");
+var rangeSlider = document.getElementById("myRange");
 var intervalId; // Variable pour stocker l'ID de l'intervalle
 var isAnimating = false; // Variable pour suivre l'état de l'animation
 

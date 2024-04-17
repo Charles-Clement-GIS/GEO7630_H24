@@ -6,14 +6,14 @@ map.addSource('chaleur', {
 
 // Ajouter la couche de données des polygones de chaleur
 map.addLayer({
-    "id": "chaleur",
-    "type": "fill",
-    "source": "chaleur",
-    "paint": {
+    id: "chaleur",
+    type: "fill",
+    source: "chaleur",
+    paint: {
         "fill-color": "#ff0000", // Couleur de remplissage des polygones
-        "fill-opacity": 0.5 // Opacité du remplissage
+        "fill-opacity": 1 // Opacité du remplissage
     },
-    "layout": {
+    layout: {
         "visibility": "none" // Initialiser la visibilité à "none" pour cacher la couche
     }
 });
