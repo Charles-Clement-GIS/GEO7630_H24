@@ -23,10 +23,10 @@ map.addLayer({
             ['linear'],
             ['heatmap-density'],                    // Utilise la densité du heatmap pour l'interpolation
             // Définit les étapes de couleur pour le heatmap
-            0, 'rgba(0, 255, 0, 0)',                // À densité 0, utilise 'rgba(0, 255, 0, 0)'
-            1, 'purple',                           // À densité 0.2, utilise 'yellow'
-            2, 'orange',                           // À densité 0.4, utilise 'orange'
-            7, 'red'                               // À densité 0.6, utilise 'red'
+            0, 'rgba(0, 255, 0, 0)',               
+            1, 'blue',                           
+            2, 'orange',                           
+            7, 'red'                               
         ],
         'heatmap-opacity': 0.6,                      // Opacité du heatmap
     }        

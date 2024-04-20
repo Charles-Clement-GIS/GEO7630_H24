@@ -3,9 +3,9 @@ let pointsAffiches2022 = false;
 
 // Fonction pour basculer l'état des points
 function togglePoints2022() {
-    if (!map.getSource('annee2022')) {
+    if (!map.getSource('annee2022-source')) {
         // Charger la source uniquement si elle n'est pas déjà chargée
-        map.addSource('annee2022', {
+        map.addSource('annee2022-source', {
             type: 'vector',
             tiles: ['https://friendly-journey-jj9rx6ggqp7fpw4w-8801.app.github.dev/HE391000.Point_2022/{z}/{x}/{y}.pbf']
         });
@@ -14,7 +14,7 @@ function togglePoints2022() {
         map.addLayer({
             "id": "annee2022",
             "type": "circle",
-            "source": "annee2022",
+            "source": "annee2022-source",
             "source-layer": "HE391000.Point_2022",
             "visibility": "none",
             "filter": ["all"],

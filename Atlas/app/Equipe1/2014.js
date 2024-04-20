@@ -3,9 +3,9 @@ let pointsAffiches2014 = false;
 
 // Fonction pour basculer l'état des points
 function togglePoints2014() {
-    if (!map.getSource('annee2014')) {
+    if (!map.getSource('annee2014-source')) {
         // Charger la source uniquement si elle n'est pas déjà chargée
-        map.addSource('annee2014', {
+        map.addSource('annee2014-source', {
             type: 'vector',
             tiles: ['https://friendly-journey-jj9rx6ggqp7fpw4w-8801.app.github.dev/HE391000.Point_2014/{z}/{x}/{y}.pbf']
         });
@@ -14,7 +14,7 @@ function togglePoints2014() {
         map.addLayer({
             "id": "annee2014",
             "type": "circle",
-            "source": "annee2014",
+            "source": "annee2014-source",
             "source-layer": "HE391000.Point_2014",
             "visibility": "none",
             "filter": ["all"],

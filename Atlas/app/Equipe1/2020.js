@@ -3,9 +3,9 @@ let pointsAffiches2020 = false;
 
 // Fonction pour basculer l'état des points
 function togglePoints2020() {
-    if (!map.getSource('annee2020')) {
+    if (!map.getSource('annee2020-source')) {
         // Charger la source uniquement si elle n'est pas déjà chargée
-        map.addSource('annee2020', {
+        map.addSource('annee2020-source', {
             type: 'vector',
             tiles: ['https://friendly-journey-jj9rx6ggqp7fpw4w-8801.app.github.dev/HE391000.Point_2020/{z}/{x}/{y}.pbf']
         });
@@ -14,7 +14,7 @@ function togglePoints2020() {
         map.addLayer({
             "id": "annee2020",
             "type": "circle",
-            "source": "annee2020",
+            "source": "annee2020-source",
             "source-layer": "HE391000.Point_2020",
             "visibility": "none",
             "filter": ["all"],
