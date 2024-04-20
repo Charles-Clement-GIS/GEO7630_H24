@@ -1,3 +1,44 @@
+// ajout du REV 
+
+
+
+
+map.addSource('reseau_cyclable_source', {
+    type: 'vector',
+    tiles: ['https://friendly-journey-jj9rx6ggqp7fpw4w-8801.app.github.dev/HE391000.rezo_cyclable_MTL2/{z}/{x}/{y}.pbf']
+});
+
+map.addLayer({
+    "id": "reseau_cyclable",
+    "type": "line",
+    "source": "reseau_cyclable_source",
+    "source-layer": "HE391000.rezo_cyclable_MTL2",
+    "paint": {
+        "line-color": "#5C5C5C", // Couleur de la ligne
+        "line-opacity": 1 // Opacité de la ligne
+    }
+});
+
+map.addSource('REV-source', {
+    type: 'vector',
+    tiles: ['https://friendly-journey-jj9rx6ggqp7fpw4w-8801.app.github.dev/HE391000.reseau-express-velo/{z}/{x}/{y}.pbf']
+});
+
+map.addLayer({
+    "id": "REV",
+    "type": "line",
+    "source": "REV-source",
+    "source-layer": "HE391000.reseau-express-velo",
+    "paint": {
+        "line-color": "#FFFFFF", // Couleur de la ligne
+        "line-opacity": 1 // Opacité de la ligne
+    }
+});
+
+
+
+
+
 // A.1. Création du contrôle d'échelle 
 var scale = new maplibregl.ScaleControl({
 

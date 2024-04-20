@@ -1,7 +1,0 @@
-Laboratoire #
-
-****
-
-Aide TP2
-
-****

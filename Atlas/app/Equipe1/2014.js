@@ -45,6 +45,7 @@ function togglePoints2014() {
         map.setLayoutProperty('annee2014', 'visibility', 'visible');
         pointsAffiches2014= true;
     }
+    
 }
 
 // Ajouter un écouteur d'événements au bouton
