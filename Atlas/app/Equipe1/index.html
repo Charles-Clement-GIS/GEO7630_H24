@@ -8,17 +8,19 @@
             <label for="customRange3" class="form-label">Années</label>
             <div class="d-flex align-items-center">
               <div class="container">
-                <input type="range" value="2014" class="slider" id="myRange" list="tickmarks">
+                <input type="range" class="form-range" min="0" max="6" id="myRange" value="0" list="tickmarks">
                 <datalist id="tickmarks">
-                  <option value="2014">
-                  <option value="2019">
-                  <option value="2020">
-                  <option value="2021">
-                  <option value="2022">
-                  <option value="2023">
+                    <option value="2014">2014</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
                 </datalist>
-                <output id="output">0</output>
-              </div>
+                <output id="output"></output>
+            </div>
+            
               <div class="btn-group ms-2" role="group" aria-label="Basic example">
                 <button id="playButton" type="button" class="btn btn-primary">Play</button>
                 <button id="stopButton" type="button" class="btn btn-primary">Stop</button>
