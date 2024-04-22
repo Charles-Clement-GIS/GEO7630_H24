@@ -50,3 +50,17 @@ function togglePoints2021() {
 // Ajouter un écouteur d'événements au bouton
 const bouton2021 = document.getElementById('point2021');
 bouton2021.addEventListener('click', togglePoints2021);
+
+
+map.on('click', 'annee2021', function (e) {
+    var coordinates = turf.centroid(e.features[0]).geometry.coordinates;// Calcul des coordonnées du centre de la géométrie cliquée (indice utilisez turf.centroid)
+  
+    // Création du contenu du popup
+    var popupContent = '<h3>' + e.features[0].properties.score + ' vélo(s) comptabilisé(s) en 2021' + '</h3>'; // Vous pouvez personnaliser le contenu du popup en fonction de vos besoins
+  
+    // Ajout du popup à la carte Maplibre
+    new maplibregl.Popup()
+      .setLngLat(coordinates)
+      .setHTML(popupContent)
+      .addTo(map);
+  });

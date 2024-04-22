@@ -50,3 +50,16 @@ function togglePoints2019() {
 // Ajouter un écouteur d'événements au bouton
 const bouton2019 = document.getElementById('point2019');
 bouton2019.addEventListener('click', togglePoints2019);
+
+map.on('click', 'annee2019', function (e) {
+    var coordinates = turf.centroid(e.features[0]).geometry.coordinates;// Calcul des coordonnées du centre de la géométrie cliquée (indice utilisez turf.centroid)
+  
+    // Création du contenu du popup
+    var popupContent = '<h3>' + e.features[0].properties.score + ' vélo(s) comptabilisé(s) en 2019' + '</h3>'; // Vous pouvez personnaliser le contenu du popup en fonction de vos besoins
+  
+    // Ajout du popup à la carte Maplibre
+    new maplibregl.Popup()
+      .setLngLat(coordinates)
+      .setHTML(popupContent)
+      .addTo(map);
+  });

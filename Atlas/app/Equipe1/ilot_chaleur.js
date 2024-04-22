@@ -19,14 +19,16 @@ function togglePointsChaleur() {
                     "property": "temp_class",
                     "type": "interval",
                     "stops": [
-                        [1, "rgba(242, 233, 1, 1)"],
-                        [2, "rgba(245, 190, 17, 1)"],
-                        [3, "rgba(249, 147, 33, 1)"],
-                        [4, "rgba(252, 104, 48, 1)"],
-                        [5, "rgba(255, 61, 64, 1)"]
+                        [1, "rgba(73, 132, 89, 1)"],
+                        [2, "rgba(154, 203, 116, 1)"],
+                        [3, "rgba(226, 234, 166, 1)"],
+                        [4, "rgba(224, 162, 107, 1)"],
+                        [5, "rgba(159, 52, 66, 1)"]
                     ]
                     
-                }, "fill-opacity": 0.3
+                }, 
+                "fill-opacity": 0.5,
+                "fill-outline-color": "transparent"
             },
            
         });

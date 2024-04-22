@@ -15,3 +15,17 @@
     width: 23%;
     background-color: rgba(33, 37, 40, 1);
 }
+
+.with-margin-top {
+    margin-top: 20px; /* Vous pouvez ajuster cette valeur selon l'espace désiré */
+}
+
+.green-text {
+    color: #28A745;
+}
+
+.green-line {
+    border: none;
+    border-top: 3px solid #28A745; /* Couleur de la ligne verte */
+    width: 100%; /* Pour étendre la ligne horizontale sur toute la largeur du conteneur */
+}

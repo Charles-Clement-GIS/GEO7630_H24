@@ -36,7 +36,7 @@ function startAnimation() {
             playButton.disabled = false;
             stopButton.disabled = true;
         }
-    }, 10000); // Intervalle de temps en millisecondes entre chaque étape de l'animation
+    }, 4000); // Intervalle de temps en millisecondes entre chaque étape de l'animation
 }
 
 function stopAnimation() {

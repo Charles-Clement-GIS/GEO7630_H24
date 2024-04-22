@@ -14,8 +14,9 @@ map.addLayer({
     "source": "reseau_cyclable_source",
     "source-layer": "HE391000.rezo_cyclable_MTL2",
     "paint": {
-        "line-color": "#5C5C5C", // Couleur de la ligne
-        "line-opacity": 1 // Opacité de la ligne
+        "line-color": "rgba(253, 255, 247, 1)", // Couleur de la ligne
+        "line-opacity": 1, // Opacité de la ligne
+        "line-width": 0.4
     }
 });
 
@@ -31,7 +32,8 @@ map.addLayer({
     "source-layer": "HE391000.reseau-express-velo",
     "paint": {
         "line-color": "#FFFFFF", // Couleur de la ligne
-        "line-opacity": 1 // Opacité de la ligne
+        "line-opacity": 1, // Opacité de la ligne
+        "line-width": 4
     }
 });
 

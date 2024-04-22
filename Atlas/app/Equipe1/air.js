@@ -19,13 +19,15 @@ function togglePointsAir() {
                     "property": "gridcode",
                     "type": "interval",
                     "stops": [
-                        [25, "rgba(242, 233, 1, 1)"],
-                        [29, "rgba(249, 147, 33, 1)"],
-                        [45, "rgba(255, 61, 64, 1)"],
+                        [25, "rgba(154, 203, 116, 1)"],
+                        [29, "rgba(224, 162, 107, 1)"],
+                        [45, "rgba(159, 52, 66, 1)"],
                         ]
                     
                     
-                }, "fill-opacity": 0.3
+                }, 
+                "fill-opacity": 0.3,
+                "fill-outline-color": "transparent"
             },
            
         });

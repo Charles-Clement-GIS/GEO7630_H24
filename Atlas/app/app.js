@@ -4,14 +4,10 @@
 var map = new maplibregl.Map({
     container: 'map', // identifiant de l'élément HTML conteneur de la carte
     style: 'https://api.maptiler.com/maps/844ceac7-1626-4655-8d90-45433d56d02b/style.json?key=ldEZwRKSd58kyBXzxzqw', // URL du style de la carte
-    center: [-73.55, 45.55], // position centrale de la carte
-    zoom: 9, // niveau de zoom initial
+    center: [-73.67, 45.59], // position centrale de la carte
+    zoom: 10, // niveau de zoom initial
     hash: true // activation du hash pour la gestion de l'historique de la carte
 });
-
-
-
-
 
 
 function loadTeam(teamName) {
