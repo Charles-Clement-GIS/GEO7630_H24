@@ -13,31 +13,103 @@ function executeFunctionAtStep(rangeValue) {
             removeLayerAndSource('annee2014-range');
             removeLayerAndSource('annee2019-range');
             addYearLayer('annee2014-range', 'HE391000.Point_2014');
+            map.on('click', 'annee2014-range', function (e) {
+                var coordinates = turf.centroid(e.features[0]).geometry.coordinates;// Calcul des coordonnées du centre de la géométrie cliquée (indice utilisez turf.centroid)
+              
+                // Création du contenu du popup
+                var popupContent = '<h3>' + e.features[0].properties.score + ' vélo(s) comptabilisé(s) en 2014' + '</h3>'; // Vous pouvez personnaliser le contenu du popup en fonction de vos besoins
+              
+                // Ajout du popup à la carte Maplibre
+                new maplibregl.Popup()
+                  .setLngLat(coordinates)
+                  .setHTML(popupContent)
+                  .addTo(map);
+              });
             break;
         case 2:
             removeLayerAndSource('annee2014-range');
             removeLayerAndSource('annee2020-range');
             addYearLayer('annee2019-range', 'HE391000.Point_2019');
+            map.on('click', 'annee2019-range', function (e) {
+                var coordinates = turf.centroid(e.features[0]).geometry.coordinates;// Calcul des coordonnées du centre de la géométrie cliquée (indice utilisez turf.centroid)
+              
+                // Création du contenu du popup
+                var popupContent = '<h3>' + e.features[0].properties.score + ' vélos comptabilisés en 2019' + '</h3>'; // Vous pouvez personnaliser le contenu du popup en fonction de vos besoins
+              
+                // Ajout du popup à la carte Maplibre
+                new maplibregl.Popup()
+                  .setLngLat(coordinates)
+                  .setHTML(popupContent)
+                  .addTo(map);
+              });
             break;
         case 3:
             removeLayerAndSource('annee2019-range');
             removeLayerAndSource('annee2021-range');
             addYearLayer('annee2020-range', 'HE391000.Point_2020');
+            map.on('click', 'annee2020-range', function (e) {
+                var coordinates = turf.centroid(e.features[0]).geometry.coordinates;// Calcul des coordonnées du centre de la géométrie cliquée (indice utilisez turf.centroid)
+              
+                // Création du contenu du popup
+                var popupContent = '<h3>' + e.features[0].properties.score + ' vélos comptabilisé(s) en 2020' + '</h3>'; // Vous pouvez personnaliser le contenu du popup en fonction de vos besoins
+              
+                // Ajout du popup à la carte Maplibre
+                new maplibregl.Popup()
+                  .setLngLat(coordinates)
+                  .setHTML(popupContent)
+                  .addTo(map);
+              });
             break;
         case 4:
             removeLayerAndSource('annee2022-range');
             removeLayerAndSource('annee2020-range');
             addYearLayer('annee2021-range', 'HE391000.Point_2021');
+            map.on('click', 'annee2021-range', function (e) {
+                var coordinates = turf.centroid(e.features[0]).geometry.coordinates;// Calcul des coordonnées du centre de la géométrie cliquée (indice utilisez turf.centroid)
+              
+                // Création du contenu du popup
+                var popupContent = '<h3>' + e.features[0].properties.score + ' vélos comptabilisés en 2021' + '</h3>'; // Vous pouvez personnaliser le contenu du popup en fonction de vos besoins
+              
+                // Ajout du popup à la carte Maplibre
+                new maplibregl.Popup()
+                  .setLngLat(coordinates)
+                  .setHTML(popupContent)
+                  .addTo(map);
+              });
             break;
         case 5:
             removeLayerAndSource('annee2021-range');
             removeLayerAndSource('annee2023-range');
             addYearLayer('annee2022-range', 'HE391000.Point_2022');
+            map.on('click', 'annee2022-range', function (e) {
+                var coordinates = turf.centroid(e.features[0]).geometry.coordinates;// Calcul des coordonnées du centre de la géométrie cliquée (indice utilisez turf.centroid)
+              
+                // Création du contenu du popup
+                var popupContent = '<h3>' + e.features[0].properties.score + ' vélos comptabilisés en 2022' + '</h3>'; // Vous pouvez personnaliser le contenu du popup en fonction de vos besoins
+              
+                // Ajout du popup à la carte Maplibre
+                new maplibregl.Popup()
+                  .setLngLat(coordinates)
+                  .setHTML(popupContent)
+                  .addTo(map);
+              });
             break;
         case 6:
             removeLayerAndSource('annee2022-range');
             removeLayerAndSource('annee2023-range');
             addYearLayer('annee2023-range', 'HE391000.Point_2023');
+            map.on('click', 'annee2023-range', function (e) {
+                var coordinates = turf.centroid(e.features[0]).geometry.coordinates;// Calcul des coordonnées du centre de la géométrie cliquée (indice utilisez turf.centroid)
+              
+                // Création du contenu du popup
+                var popupContent = '<h3>' + e.features[0].properties.score + ' vélos comptabilisés en 2023' + '</h3>'; // Vous pouvez personnaliser le contenu du popup en fonction de vos besoins
+              
+                // Ajout du popup à la carte Maplibre
+                new maplibregl.Popup()
+                  .setLngLat(coordinates)
+                  .setHTML(popupContent)
+                  .addTo(map);
+              });
             break;
         default:
             console.log("Invalid step");

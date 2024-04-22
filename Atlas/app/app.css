@@ -7,7 +7,7 @@
         position:absolute;
         right:23%;
         /* top:0; */
-        bottom:20%;
+        bottom:0%;
         height: 100vh;  
         width: 65%;
     }
@@ -19,7 +19,7 @@
         bottom:0%;
         height: 20%;  
         width: 65%;
-        background-color: rgb(14, 14, 14);
+        background-color: rgb(255, 255, 255);
     }
 
     
@@ -30,7 +30,8 @@
         bottom:0%;
         height: 100vh;  
         width: 23%;
-        background-color: rgb(20, 20, 20);
+        background-color: rgb(255, 255, 255);
+    
 
     }
 

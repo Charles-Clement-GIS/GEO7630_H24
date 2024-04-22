@@ -56,7 +56,7 @@ map.on('click', 'annee2021', function (e) {
     var coordinates = turf.centroid(e.features[0]).geometry.coordinates;// Calcul des coordonnées du centre de la géométrie cliquée (indice utilisez turf.centroid)
   
     // Création du contenu du popup
-    var popupContent = '<h3>' + e.features[0].properties.score + ' vélo(s) comptabilisé(s) en 2021' + '</h3>'; // Vous pouvez personnaliser le contenu du popup en fonction de vos besoins
+    var popupContent = '<h3>' + e.features[0].properties.score + ' vélos comptabilisés en 2021' + '</h3>'; // Vous pouvez personnaliser le contenu du popup en fonction de vos besoins
   
     // Ajout du popup à la carte Maplibre
     new maplibregl.Popup()

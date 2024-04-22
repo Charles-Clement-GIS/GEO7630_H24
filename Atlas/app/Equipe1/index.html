@@ -1,4 +1,4 @@
-<div id="bottomMenu" class="container-fluid bg-dark">
+<!-- <div id="bottomMenu" class="container-fluid bg-dark">
     <div class="row" style="padding: 10px; height: 100%;">
       <div class="col" style="height: 100%">
         <div class="card" style="height: 100%;">
@@ -37,10 +37,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
   <div id="rightMenu" class="container-fluid bg-dark d-flex align-items-center justify-content-center">
-    <div class="row" style="padding: 10px; height: 100%">
+    <div class="row" style="padding: 10px; height: 100%; background-color: white; border: none;">
+
       <div class="col" style="height: 100%;">
         <div class="card" style="height: 100%;">
           <div class="card-body d-flex flex-column align-items-center">
@@ -49,17 +50,41 @@
 
             <hr class="green-line">
             <div class="button-group">
-              <h6 class="label">Indicateurs environnementaux :</h6>
+              <h6 class="label">Indicateurs environnementaux</h6>
               <div class="button-container with-margin-top ">
                 <button type="button" id="collisionBtn" class="btn btn-outline-success btn-block">Collision routière</button>
-                <button type="button" id="chaleurBtn" class="btn btn-outline-success btn-block">Îlots de chaleur</button>
+                <button type="button" id="chaleurBtn" class="btn btn-outline-success btn-block">Îlot de chaleur</button>
                 <button type="button" id="qualiteAirBtn" class="btn btn-outline-success btn-block">Qualité de l'air</button>           
               </div>
-            
           </div>
-  
-          
-        
+          <hr class="green-line">
+          <h6 class="label">Évolution temporelle de la quantité de vélos</h6>
+          <div class="btn-group ms-2 with-margin-top" role="group" aria-label="Basic example">
+            <button id="playButton" type="button" class="btn btn-success">Play</button>
+            <button id="stopButton" type="button" class="btn btn-danger">Stop</button>
+          </div>
+          <div class="btn-group ms-3 with-margin-top" role="group" aria-label="Basic example">
+            <button id="point2014" type="button" class="btn btn-dark">2014</button>
+            <button id="point2019" type="button" class="btn btn-dark">2019</button>
+            <button id="point2020" type="button" class="btn btn-dark">2020</button>
+            <button id="point2021" type="button" class="btn btn-dark">2021</button>
+            <button id="point2022" type="button" class="btn btn-dark">2022</button>
+            <button id="point2023" type="button" class="btn btn-dark">2023</button>
+        </div>
+        <div class="container with-margin-top">
+          <input type="range" class="form-range" min="0" max="6" id="myRange" value="0" list="tickmarks" style="width: 375px;">
+          <datalist id="tickmarks">
+              <option value="2014">2014</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+              <option value="2022">2022</option>
+              <option value="2023">2023</option>
+              <option value="2024">2024</option>
+          </datalist>
+          <output id="tickmarks"></output>
+      </div>
+      <img src="https://github.com/Charles-Clement-GIS/Charles-Clement-GIS/blob/main/Capture%20d%E2%80%99%C3%A9cran%202024-04-22%20%C3%A0%2016.10.46.png" alt="Description de l'image">
     </div>
   </div>
   </div>

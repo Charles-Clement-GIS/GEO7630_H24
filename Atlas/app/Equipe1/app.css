@@ -4,7 +4,7 @@
     bottom: 0%;
     height: 20%;
     width: 65%;
-    background-color: rgba(33, 37, 40, 1);
+    background-color: rgb(255, 255, 255);
 }
 
 #rightMenu {
@@ -13,7 +13,7 @@
     bottom: 0%;
     height: 100vh;
     width: 23%;
-    background-color: rgba(33, 37, 40, 1);
+    background-color: rgb(255, 255, 255);
 }
 
 .with-margin-top {
@@ -29,3 +29,46 @@
     border-top: 3px solid #28A745; /* Couleur de la ligne verte */
     width: 100%; /* Pour étendre la ligne horizontale sur toute la largeur du conteneur */
 }
+
+
+
+
+
+.container {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .form-range {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #ffffff; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .form-range:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .form-range::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: #28A745; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .form-range::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #28A745; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
