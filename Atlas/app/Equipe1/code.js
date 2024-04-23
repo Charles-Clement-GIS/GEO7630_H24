@@ -1,4 +1,4 @@
-// ajout du REV 
+// ajout du REV et des piste cyclables
 
 
 
@@ -91,32 +91,4 @@ map.addControl(geolocateControl, 'bottom-right'); // ajout du contr√¥le en bas √
 
 
 
-// A.4. Zoom et boussole 
 
-var view = new MapView({
-
-    container: "viewDiv",
-
-    map: map
-
-});
-
-
-
-var zoom = new Zoom({
-
-    view: view
-
-});
-
-
-
-var compass = new Compass({
-
-    view: view
-
-});
-
-
-
-view.ui.add(compass, "top-left");

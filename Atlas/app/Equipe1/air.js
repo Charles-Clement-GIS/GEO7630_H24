@@ -1,3 +1,5 @@
+
+// Définir une variable pour suivre l'état des ppolygones
 let airPolygonsAffiches = false;
 
 function togglePointsAir() {
