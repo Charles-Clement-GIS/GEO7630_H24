@@ -1,27 +1,30 @@
-# GEO7630 - Intégration et visualisation de données géographiques
+Description du code :
 
-  Ce dépot va vous permettre d'installer une stack logicielle complète comprenant :
-  - Un environnement de développement intégré **VS Code** 
-  - Une base de données **Postgresql 14 + Postgis 3.2**
-  - Un serveur de tuiles vectorielles **pg_tileserv**
-  - Un serveur de WFS **pg_featureserv** 
-  - Un serveur geospatial complet **Geoserver**
+- 2014-2023.js : Ces fichiers permettent d'afficher la quantité de vélos présents sur le territoire pendant une période d'un an.
 
-  Ce repo Git vous permettra de :
-  - Sauvegarder l'ensemble de tous vos travaux
-  - Enregistrer la provenance de vos données 
-  - D'executer l'ensemble du processus d'ELT ou ETL à tous moment pour répliquer un état initial sans jamais perdre vos données.
+- Air.js : Ce script affiche un indice de qualité de l'air pour une journée précise.
 
-  Ce repot Git servira aussi :
-  - D'environnement de développement
-  - Déploiment de votre application cartographique open source
+- Animation.js : Lorsque vous cliquez sur le bouton "play", le curseur du range se déplace et affiche les couches correspondant aux années respectives. Le bouton "stop" arrête l'animation.
 
-  ## Dossier Laboratoires
-    - Contient les éléments nécessairent au bon déroulement et à la pratique des laboratoires
-  ## Dossier TPs
-    - Contient les énoncés des différents travaux pratiques
+- Code.js : Ce fichier est principalement utilisé pour placer les widgets et les pistes cyclables.
 
+- collision.js : Ce script génère une heatmap des accidents impliquant au moins un vélo.
 
-## Lien du plan de cours 
+- ilot\_chaleur.js : Ce script affiche un vecteur des îlots de chaleur de la ville de Montréal.
 
-https://drive.google.com/file/d/1xfp4CUYBTg0tXgwFWsuXzvrA8pPD474e/view?usp=sharing
+- Range.js : Ce script permet de contrôler le fonctionnement du curseur et fonctionne dans les deux sens. Le premier emplacement sert à réinitialiser le curseur.
+
+Présentation générale de l’app: 
+
+![](https://lh7-us.googleusercontent.com/xsQJbumn58EurcOkb3UgVly47-k7oHjSbL2bVn0lrUu0NJGle6LKHJ7ju-GHd9Zh2SdIKKBOIqHQzR-EX1E09ugsPt0WT2lvP1mGxkqn85P-ndcWIs82bnVIPI6LA9jN02CuKdre9V-RLho1z-YXEpc)
+
+Collisions routières:\
+![](https://lh7-us.googleusercontent.com/iWrCfsmYA7I26ltHoeJcHLkQOnOIHMht3FmLXAAcdEZMRMSikYCsk6uVz0l-2RZP21Ev0R9J_g86dr-bp0IsXU_PuddhhfoHn5RGi3s-_YiL4VKNLtvqnN8dk8ENHTsgI39vb5w6nmt42jsecbZibV4)
+
+Îlots de chaleurs:\
+![](https://lh7-us.googleusercontent.com/_7h1Lq9Saf-uOZ1vDxrsR-D184wEQuXznC6lHM5F7A7k-TOL3oqUelBlisOji-Y5HIBIVwF_d6Lv00of-Av-5HQdRwHoPwd4r4VmbgDCUSjpyEfqgCrpJy5Dj3OibLqfKMTgvOA_ky1J6C9E6Koa4_Y)
+
+Qualité de l’air :\
+![](https://lh7-us.googleusercontent.com/MKBravUlIP2_93b9Tay4NkBwkTnPr4_OD2VEFjP5aKXrmivfXjJa7CH-OSvCpyhVGL82tNV3iuuiNAJsMes_T4Jz2umWqfo6xMqg_Jtpj4sFzLXx-KSl2bZZPo1YFeHx_o30vUjxVzE_N6S3aStPsH4)
+
+Nous avons accordé une attention particulière au style, à l'HTML et au CSS pour rendre l'application esthétique et agréable à utiliser.
